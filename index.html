@@ -9,10 +9,86 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="theme.css">
     <title>Arsalan Bardsiri</title>
   </head>
-  <body>
-    <header></header>
+  <body class="light" data-theme="light">
+    <header class="third-color">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand fa" href="#home" id="brand">Arsalan Bardsiri</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <button id="themeToggle" aria-label="theme">
+            <i class="fas"></i>
+          </button>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link fa fa-address-card" href="#about"> About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fa fa-code" href="#projects"> Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fa fa-address-book" href="#contact">
+                Contact</a
+              >
+            </li>
+
+            <!-- <a class="nav-link fa fa-book" target="_blank" href="resume.html"> Resume</a> -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link fa fa-book dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Resume
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-right custom-dropdown"
+                aria-labelledby="navbarDropdown"
+              >
+                <a
+                  class="dropdown-item fa"
+                  target="_blank"
+                  href="./resume.html"
+                  id="digitalResume"
+                  >Digital Resume</a
+                >
+                <a
+                  class="dropdown-item fa"
+                  href="path_to_resume.pdf"
+                  target="_blank"
+                  id="pdfResume"
+                  >Resume PDF</a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <main></main>
     <footer></footer>
   </body>
